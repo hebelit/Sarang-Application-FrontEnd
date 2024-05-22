@@ -1,0 +1,23 @@
+mutation CreateTask($data: createTaskInput!) {
+  createTask(data: $data) {
+    name
+    
+  }
+}
+
+mutation MarkTaskComplete($markTaskCompleteId: Float!) {
+  markTaskComplete(id: $markTaskCompleteId) {
+    name
+  }
+}
+
+mutation DeleteTask($deleteTaskId: Float!) {
+  deleteTask(id: $deleteTaskId)
+}
+
+
+mutation EditTask($editTaskId: Float!) {
+  editTask(id: $editTaskId) {
+    name
+  }
+}
