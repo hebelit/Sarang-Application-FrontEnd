@@ -33,3 +33,28 @@
 .SubmitButton:hover{
     background-color: #BB86FC;
 }
+
+.ListElement{
+    background-color: #2C2C2C; /* Input Background Color */
+    border: 1px solid #3D3A4B; /* Input Border Color */
+    color: #E0E0E0; /* Input Text Color */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.DeleteTaskButton{
+    background-color: #3D3A4B; /* Secondary Button Color */
+    color: #E0E0E0; /* Button Text Color */
+}
+.DeleteTaskButton:hover{
+    background-color: #BB86FC; /* Accent Hover Color */
+}
+
+.MarkTaskCompleteButton{
+    background-color: #3D3A4B; /* Secondary Button Color */
+    color: #E0E0E0; /* Button Text Color */
+}
+
+.MarkTaskCompleteButton:hover{
+    background-color: #BB86FC; /* Secondary Button Color */
+}
