@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react'
 import TodoForm from './TodoForm';
 import TodoList from './TodoList';
 import { useGetTasksQuery, useDeleteTaskMutation, useMarkTaskCompleteMutation} from './generated/graphql';
+import './App.css'
 
 interface Todo {
   title:string;
@@ -58,9 +59,15 @@ function App() {
   
   return (
     <div className="App">
-      <h1>To-Do App</h1>
-      <TodoForm />
-      <TodoList todos={todos} deleteTodo={deleteTodo} markTaskComplete={markTaskComplete}/>
+      <div>
+        <h1>To-Do App</h1>
+      </div>
+      <div className='Form'>
+        <TodoForm />
+      </div>
+      <div className='List'>
+        <TodoList todos={todos} deleteTodo={deleteTodo} markTaskComplete={markTaskComplete}/>
+      </div>
     </div>
   );
 }

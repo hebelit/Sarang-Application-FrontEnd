@@ -1,0 +1,35 @@
+.Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.DescriptionInput{
+    background-color: #2C2C2C; /* Input Background Color */
+    border: 1px solid #3D3A4B; /* Input Border Color */
+    color: #E0E0E0; /* Input Text Color */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.TitleInput{
+    background-color: #2C2C2C; /* Input Background Color */
+    border: 1px solid #3D3A4B; /* Input Border Color */
+    color: #E0E0E0; /* Input Text Color */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.SubmitButton{
+    width: 100px;
+    height: 30px;
+    margin:10px 10px;
+    background-color: #1F1B24; /* Primary Button Color */
+    color: #E0E0E0; /* Button Text Color */
+    border-radius: 4px;
+}
+
+.SubmitButton:hover{
+    background-color: #BB86FC;
+}

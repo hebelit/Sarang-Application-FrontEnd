@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useCreateTaskMutation } from './generated/graphql';
-
+import "./styles.css"
 
 interface TodoFormProps {
     addTodo: (name: string, description: string)=> void;
@@ -39,20 +39,22 @@ const TodoForm:React.FC = ()=> {
     return (
         <form onSubmit={handleSubmit}>
           <input
+            className='TitleInput'
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="name"
+            placeholder="Title"
           />
           <br/>
           <input
+            className='DescriptionInput'
             type="text"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Task Description"
           />
           <br/>
-          <button type="submit"  disabled={loading}>Add</button>
+          <button type="submit"  disabled={loading} className='SubmitButton'>Add</button>
 
         </form>
       );
